@@ -52,7 +52,7 @@ This project involves the following steps:
     ```
 3. Open the Jupyter notebook and run all cells:
     ```bash
-    jupyter notebook PredictionModel.ipynb
+    jupyter notebook House.py
     ```
 
 ## Conclusion
