@@ -57,3 +57,9 @@ This project involves the following steps:
 
 ## Conclusion
 This project demonstrates how to use machine learning techniques like K-Nearest Neighbors for regression tasks such as predicting housing prices. The preprocessing and feature engineering steps are crucial for improving model performance, and this project can be further extended by experimenting with more advanced algorithms like XGBoost or Random Forest.
+
+Developed a machine learning model to predict hospital readmission likelihood, aiming to improve hospital operational efficiency and patient care management.
+-	Developed and deployed a machine learning model to predict hospital readmission, achieving an AUC score of 0.68 on the final test dataset.
+-	Preprocessed and cleaned a real-world dataset of over 8,000 hospital entries and 40 features (e.g., diagnoses, prescriptions, ER visits).
+-	Implemented Logistic Regression and XGBoost models with hyperparameter tuning, increasing predictive performance by ~7% using model stacking with TF-IDF for medical text data. 
+
