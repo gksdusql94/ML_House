@@ -35,7 +35,10 @@ for column in selected_columns:
     plt.show()
 '''
 
-![image](https://github.com/user-attachments/assets/2c159314-7535-4106-8d40-19c8fb99a87b)
+![image](https://github.com/user-attachments/assets/2c159314-7535-4106-8d40-19c8fb99a87b)![image](https://github.com/user-attachments/assets/a5477792-81ac-4559-aa19-9398eaf3032f)![image](https://github.com/user-attachments/assets/e88ba6d9-03c2-46ff-8ba9-da5fa3c773d3)![image](https://github.com/user-attachments/assets/fa265974-a72a-4d35-b556-0fce78838124)
+
+
+
 
 ### Correlation with sale price: For each of the 4 chosen predictive features, draw a scatter plot of this feature and SalePrice. Set the title, axis label of the graph properly
 '''python
