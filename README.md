@@ -1,4 +1,4 @@
-#🏠 Predicting Home Prices Using the Ames Housing Dataset
+# 🏠 Predicting Home Prices Using the Ames Housing Dataset
 
 This project uses the K-Nearest Neighbors (KNN) algorithm to predict home prices in Ames, Iowa based on historical data from Kaggle's Ames Housing Dataset. We aim to predict a target house's price based on the similarity to other houses.
 
