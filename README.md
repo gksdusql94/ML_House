@@ -1,13 +1,13 @@
-# Predicting Home Prices Using the Ames Housing Dataset
+#🏠 Predicting Home Prices Using the Ames Housing Dataset
 
-This project aims to predict housing prices in Ames, Iowa using the Kaggle Ames Housing Dataset, which contains 2,919 housing sale records between 2006-2010 with 79 features for each house. The project implements a K-Nearest Neighbors (KNN) algorithm to estimate the price of a new house based on historical data. Below is an outline of the project:
+This project uses the K-Nearest Neighbors (KNN) algorithm to predict home prices in Ames, Iowa based on historical data from Kaggle's Ames Housing Dataset. We aim to predict a target house's price based on the similarity to other houses.
 
-## Dataset
+## 📊 Dataset
 - **Source**: Kaggle's Ames Housing Dataset
 - **Size**: 2,919 observations and 79 features
 - **Features**: Information about house size, quality, area, age, and other attributes related to housing prices in Ames, Iowa.
 
-## Project Overview
+## 🔄 Project Overview
 This project involves the following steps:
 1. **Data Preprocessing**:
    - Loaded the dataset as a Pandas DataFrame.
@@ -17,7 +17,44 @@ This project involves the following steps:
 2. **Key Feature Analysis**:
    - Analyzed the relationship between important features like `OverallQual`, `YearBuilt`, `TotalBsmtSF`, `GrLivArea`, and `SalePrice`.
    - Performed correlation analysis and generated descriptive statistics.
-   
+
+### Distribution: For each of the 5 features, generate a histogram. Choose the number of bins properly.
+'''python
+import pandas as pd
+import matplotlib.pyplot as plt
+
+selected_columns = ['OverallQual', 'YearBuilt', 'TotalBsmtSF', 'GrLivArea', 'SalePrice']
+
+for column in selected_columns:
+    plt.figure(figsize=(5, 4))
+    plt.hist(df[column], bins=15, color='blue', edgecolor='skyblue')
+    plt.title(f'Histogram of {column}')
+    plt.xlabel(column)
+    plt.ylabel('Frequency')
+    plt.grid(axis='y', linestyle='--', alpha=0.5)
+    plt.show()
+'''
+
+![image](https://github.com/user-attachments/assets/2c159314-7535-4106-8d40-19c8fb99a87b)
+
+### Correlation with sale price: For each of the 4 chosen predictive features, draw a scatter plot of this feature and SalePrice. Set the title, axis label of the graph properly
+'''python
+selected_features = ['OverallQual', 'YearBuilt', 'TotalBsmtSF', 'GrLivArea']
+target_feature = 'SalePrice'
+correlation_matrix = data.corr()
+
+for feature in selected_features:
+    plt.figure(figsize=(4, 3))
+    plt.scatter(df[feature], df[target_feature], alpha=0.7, color='skyblue')
+    plt.title(f'Scatter Plot of {feature} vs. {target_feature}')
+    plt.xlabel(feature)
+    plt.ylabel(target_feature)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.show()
+'''
+![image](https://github.com/user-attachments/assets/682c278f-9714-4404-b35c-efe227d45a26)
+
+
 3. **Feature Engineering**:
    - Created new features such as `TotalArea` (sum of basement area and ground living area) and `AreaPerRoom` (average room size).
    
@@ -28,12 +65,20 @@ This project involves the following steps:
 5. **Results**:
    - Predicted price for the target house was **$121,080**.
    - Used the average price of the 5 nearest neighbors to generate the prediction.
+   - Prices of the 5 nearest neighbors:
+$122,000
+$125,500
+$109,900
+$109,500
+$138,500
 
-## Files
-- `HousingData_processed.csv`: Processed dataset with key features selected for modeling.
-- `PredictionModel.ipynb`: Jupyter notebook containing all code for data processing, feature analysis, and model implementation.
+## 🛠️ How to Run the Project
 
-## Requirements
+'''bash
+git clone https://github.com/gksdusql94/ML_House.git
+'''
+
+## 📊 Technologies Used
 - Python 3.x
 - Libraries:
   - Pandas
@@ -41,21 +86,7 @@ This project involves the following steps:
   - Matplotlib
   - scikit-learn
 
-## How to Run
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/gksdusql94/ML_House.git
-    ```
-2. Install the required libraries:
-    ```bash
-    pip install -r requirements.txt
-    ```
-3. Open the Jupyter notebook and run all cells:
-    ```bash
-    jupyter notebook House.py
-    ```
-
-## Conclusion
+## 🎯 Conclusion
 This project demonstrates how to use machine learning techniques like K-Nearest Neighbors for regression tasks such as predicting housing prices. The preprocessing and feature engineering steps are crucial for improving model performance, and this project can be further extended by experimenting with more advanced algorithms like XGBoost or Random Forest.
 
 Developed a machine learning model to predict hospital readmission likelihood, aiming to improve hospital operational efficiency and patient care management.
