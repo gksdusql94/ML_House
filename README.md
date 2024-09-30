@@ -20,7 +20,7 @@ This project involves the following steps:
 
 ### Distribution: For each of the 5 features, generate a histogram. Choose the number of bins properly.
 
-'''python
+''' python
 import pandas as pd
 import matplotlib.pyplot as plt
 
@@ -40,7 +40,8 @@ for column in selected_columns:
 ![image](https://github.com/user-attachments/assets/25876312-c224-429c-8017-a37fe05728bd)![image](https://github.com/user-attachments/assets/9eb884d3-1fd0-4832-936e-756e0d31c2f9)
 
 ### Correlation with sale price: For each of the 4 chosen predictive features, draw a scatter plot of this feature and SalePrice. Set the title, axis label of the graph properly
-'''python
+
+''' python
 selected_features = ['OverallQual', 'YearBuilt', 'TotalBsmtSF', 'GrLivArea']
 target_feature = 'SalePrice'
 correlation_matrix = data.corr()
@@ -77,7 +78,7 @@ $138,500
 
 ## 🛠️ How to Run the Project
 
-'''bash
+''' bash
 git clone https://github.com/gksdusql94/ML_House.git
 '''
 
