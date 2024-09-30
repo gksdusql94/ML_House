@@ -19,6 +19,7 @@ This project involves the following steps:
    - Performed correlation analysis and generated descriptive statistics.
 
 ### Distribution: For each of the 5 features, generate a histogram. Choose the number of bins properly.
+
 '''python
 import pandas as pd
 import matplotlib.pyplot as plt
