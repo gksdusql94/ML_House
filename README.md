@@ -58,7 +58,7 @@ for feature in selected_features:
 
 ![image](https://github.com/user-attachments/assets/3627bacd-0e71-4415-aed8-212db615a23b)![image](https://github.com/user-attachments/assets/a5477792-81ac-4559-aa19-9398eaf3032f)![image](https://github.com/user-attachments/assets/e88ba6d9-03c2-46ff-8ba9-da5fa3c773d3)![image](https://github.com/user-attachments/assets/fa265974-a72a-4d35-b556-0fce78838124)
 
-### Scatter Plots of Key Features vs. SalePrice:
+### Correlation:
 
 ```python
 selected_features = ['OverallQual', 'YearBuilt', 'TotalBsmtSF', 'GrLivArea']
