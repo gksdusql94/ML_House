@@ -89,9 +89,9 @@ $138,500
 
 ## 🛠️ How to Run the Project
 
-''' bash
+```bash
 git clone https://github.com/gksdusql94/ML_House.git
-'''
+```
 
 ## 📊 Technologies Used
 - Python 3.x
