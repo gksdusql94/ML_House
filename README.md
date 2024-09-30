@@ -52,7 +52,8 @@ for feature in selected_features:
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.show()
 '''
-![image](https://github.com/user-attachments/assets/682c278f-9714-4404-b35c-efe227d45a26)
+![image](https://github.com/user-attachments/assets/3627bacd-0e71-4415-aed8-212db615a23b)
+
 
 
 3. **Feature Engineering**:
