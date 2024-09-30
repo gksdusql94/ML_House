@@ -19,9 +19,10 @@ This project involves the following steps:
    - Performed correlation analysis and generated descriptive statistics.
 
 ## 📊 Visualization
-### Histograms of Key Features:
+### Correct Formatting for Histograms of Key Features:
 Distribution: For each of the 5 features, generate a histogram. Choose the number of bins properly.
-''' python
+
+```python
 import matplotlib.pyplot as plt
 
 selected_columns = ['OverallQual', 'YearBuilt', 'TotalBsmtSF', 'GrLivArea', 'SalePrice']
@@ -34,7 +35,7 @@ for column in selected_columns:
     plt.ylabel('Frequency')
     plt.grid(axis='y', linestyle='--', alpha=0.5)
     plt.show()
-    '''
+```
 
 ![image](https://github.com/user-attachments/assets/2c159314-7535-4106-8d40-19c8fb99a87b)!![image](https://github.com/user-attachments/assets/daf9c933-b5eb-432a-a960-8fd817b21915)![image](https://github.com/user-attachments/assets/16c5a115-e2bf-48f2-a0d1-ef3fe120a7e5)
 ![image](https://github.com/user-attachments/assets/25876312-c224-429c-8017-a37fe05728bd)![image](https://github.com/user-attachments/assets/9eb884d3-1fd0-4832-936e-756e0d31c2f9)
