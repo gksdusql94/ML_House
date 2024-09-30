@@ -34,7 +34,7 @@ for column in selected_columns:
     plt.ylabel('Frequency')
     plt.grid(axis='y', linestyle='--', alpha=0.5)
     plt.show()
-'''
+    '''
 
 ![image](https://github.com/user-attachments/assets/2c159314-7535-4106-8d40-19c8fb99a87b)!![image](https://github.com/user-attachments/assets/daf9c933-b5eb-432a-a960-8fd817b21915)![image](https://github.com/user-attachments/assets/16c5a115-e2bf-48f2-a0d1-ef3fe120a7e5)
 ![image](https://github.com/user-attachments/assets/25876312-c224-429c-8017-a37fe05728bd)![image](https://github.com/user-attachments/assets/9eb884d3-1fd0-4832-936e-756e0d31c2f9)
@@ -53,7 +53,7 @@ for feature in selected_features:
     plt.ylabel(target_feature)
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.show()
-'''
+    '''
 ![image](https://github.com/user-attachments/assets/3627bacd-0e71-4415-aed8-212db615a23b)![image](https://github.com/user-attachments/assets/a5477792-81ac-4559-aa19-9398eaf3032f)![image](https://github.com/user-attachments/assets/e88ba6d9-03c2-46ff-8ba9-da5fa3c773d3)![image](https://github.com/user-attachments/assets/fa265974-a72a-4d35-b556-0fce78838124)
 
 
